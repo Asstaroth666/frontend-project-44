@@ -6,7 +6,12 @@
   "description": "[![Actions Status](https://github.com/Asstaroth666/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Asstaroth666/frontend-project-44/actions)",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.2.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +21,4 @@
   "author": "",
   "type": "module",
   "license": "ISC"
-  
 }
