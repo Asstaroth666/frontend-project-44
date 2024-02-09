@@ -13,19 +13,31 @@ const gcd = () => {
     console.log(`Hello, ${name}!`);
 
 
-    let randomNumber = getRandomArbitrary(1 , 50);
-    let randomNumber2 = getRandomArbitrary(1 , 50);
+    let randomNumber = getRandomArbitrary(1 , 20);
+    let randomNumber2 = getRandomArbitrary(1 , 20);
+        
+
+
     console.log('Find the greatest common divisor of given numbers.')
     console.log(`Question: ${randomNumber} ${randomNumber2} `)
     const ask = readlineSync.question(`Your answer: `)
-    
-    while (randomNumber != 0 && randomNumber2 != 0) 
-    if (randomNumber > randomNumber2) {
-        let answer = randomNumber % randomNumber2
-    } else {
-        (asnwer = randomNumber2 % randomNumber) 
-    };
 
+    function answer(randomNumber, randomNumber2) {
+      while (randomNumber !== randomNumber2) {
+        if (randomNumber > randomNumber2) {
+          randomNumber = randomNumber - randomNumber2 ;
+        } else {
+          randomNumber2 = randomNumber2 - randomNumber
+        }
+      }
+      return randomNumber
+    }
+
+    if (answer == ask) {
+      console.log('Correct!')
+    } else {
+      console.log(`${ask} is wrong answer ;(. Correct answer was ${}.`)
+    }
 
 
     };
